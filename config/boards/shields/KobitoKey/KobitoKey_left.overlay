@@ -87,10 +87,24 @@
     status = "okay";
 
     input-processors =
-        <&sensor_rotation_right>,
-        <&zip_temp_layer 3 5000>; /* オートマウスレイヤーの指定とトラボ操作及びマウスボタン押下後に滞留する時間 */
+        <&sensor_rotation_right>; /* 通常時：カーソル移動（オートマウスレイヤーはオフ） */
+    /* オートマウスレイヤーを有効に戻す場合は上を , 区切りにして下行を追加:
+        <&zip_temp_layer 3 5000>; */
+
+    /* レイヤー4のとき：右トラックボールをスクロールに（設定は左トラボと同じ） */
+    scroller {
+        layers = <4>;
+        input-processors =
+            <&sensor_rotation_right>,
+            <&zip_x_scaler 0 1>,
+            <&zip_y_scaler 1 15>,
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
+            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>;
+    };
 };
 
+/* オートマウスレイヤー無効化に伴い excluded-positions は不要のためコメントアウト
 &zip_temp_layer {
     excluded-positions = <
         6
@@ -102,3 +116,4 @@
         39
     >;
 };
+*/
