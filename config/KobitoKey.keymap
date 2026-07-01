@@ -48,8 +48,8 @@
         layer1 {
             label = "NUMBER";
             bindings = <
-&kp LS(LC(T))  &kp LC(W)  &kp LC(T)  &kp LC(LS(TAB))  &kp LC(TAB)    &kp LC(X)      &kp LA(LEFT)  &mkp MCLK     &kp LA(RIGHT)  &trans
-&kp LC(A)      &kp LC(S)  &trans     &kp LEFT_SHIFT   &kp LCTRL      &kp LC(C)      &mkp LCLK     &kp UP_ARROW  &mkp RCLK      &trans
+&kp LS(LC(T))  &kp LC(W)  &kp LC(T)  &kp LC(LS(TAB))  &kp LC(TAB)    &kp LC(X)      &mkp LCLK     &mkp MCLK     &mkp RCLK      &trans
+&kp LC(A)      &kp LC(S)  &trans     &kp LEFT_SHIFT   &kp LCTRL      &kp LC(C)      &kp LA(LEFT)  &kp UP_ARROW  &kp LA(RIGHT)  &trans
 &kp LC(Z)      &trans     &trans     &kp LC(MINUS)    &kp LC(EQUAL)  &kp LC(V)      &kp LEFT      &kp DOWN      &kp RIGHT      &trans
 &kp LC(LS(Z))  &trans     &trans     &trans           &kp LG(LS(S))  &kp BACKSPACE  &kp ENTER     &kp LG(V)     &trans         &trans
             >;
@@ -77,10 +77,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_SHIFT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans
+&trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans          &trans  &trans
+&trans  &trans  &trans  &kp LEFT_SHIFT  &trans  &trans  &trans  &kp LEFT_SHIFT  &trans  &trans
+&trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans          &trans  &trans
+&trans  &trans  &trans  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans          &trans  &trans
             >;
         };
     };
