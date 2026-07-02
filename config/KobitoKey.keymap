@@ -48,10 +48,10 @@
         layer1 {
             label = "NUMBER";
             bindings = <
-&kp LS(LC(T))  &kp LC(W)  &kp LC(T)  &kp LC(LS(TAB))  &kp LC(TAB)    &mkp LCLK           &mkp RCLK            &kp LC(C)     &kp LC(V)      &trans
-&kp LC(A)      &kp LC(S)  &trans     &kp LEFT_SHIFT   &kp LCTRL      &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp UP_ARROW  &kp LC(LS(V))  &trans
-&kp LC(Z)      &trans     &trans     &kp LC(MINUS)    &kp LC(EQUAL)  &kp LC(V)           &kp LEFT             &kp DOWN      &kp RIGHT      &trans
-&kp LC(LS(Z))  &trans     &trans     &trans           &kp LG(LS(S))  &kp BACKSPACE       &kp ENTER            &kp LG(V)     &trans         &trans
+&kp LS(LC(T))  &kp LC(W)  &kp LC(T)  &kp LC(LS(TAB))  &kp LC(TAB)    &mkp LCLK           &mkp RCLK            &kp LC(C)      &kp LC(V)      &kp LC(X)
+&kp LC(A)      &kp LC(S)  &trans     &kp LEFT_SHIFT   &kp LCTRL      &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp UP_ARROW   &kp LC(LS(V))  &kp LG(V)
+&kp LC(Z)      &trans     &trans     &kp LC(MINUS)    &kp LC(EQUAL)  &kp LG(LS(S))       &kp LEFT             &kp DOWN       &kp RIGHT      &trans
+&kp LC(LS(Z))  &trans     &trans     &trans           &trans         &kp ENTER           &kp LG(V)            &kp BACKSPACE  &trans         &trans
             >;
         };
 
