@@ -38,10 +38,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W         &kp E                     &kp R        &kp T             &kp Y                    &kp U      &kp I          &kp O          &kp P
-&kp A               &kp S         &kp D                     &lt 3 F      &lt 2 G           &kp H                    &kp J      &kp K          &lt 4 L        &lt 1 MINUS
-&kp Z               &kp X         &kp C                     &kp V        &kp B             &kp N                    &kp M      &kp COMMA      &kp DOT        &kp SLASH
-&mt LEFT_SHIFT TAB  &kp LEFT_WIN  &mt LEFT_ALT EXCLAMATION  &lt 1 SPACE  &mt LCTRL DELETE  &mt LEFT_SHIFT CAPSLOCK  &kp ENTER  &kp BACKSPACE  &kp BACKSPACE  &kp ENTER
+&kp Q               &kp W         &kp E                     &kp R        &kp T             &kp Y                    &kp U      &kp I          &kp O       &kp P
+&kp A               &kp S         &kp D                     &lt 3 F      &lt 2 G           &kp H                    &kp J      &kp K          &lt 4 L     &lt 1 MINUS
+&kp Z               &kp X         &kp C                     &kp V        &kp B             &kp N                    &kp M      &kp COMMA      &kp DOT     &kp SLASH
+&mt LEFT_SHIFT TAB  &kp LEFT_WIN  &mt LEFT_ALT EXCLAMATION  &lt 1 SPACE  &mt LCTRL DELETE  &mt LEFT_SHIFT CAPSLOCK  &kp ENTER  &kp BACKSPACE  &kp ESCAPE  &kp TAB
             >;
         };
 
@@ -50,7 +50,7 @@
             bindings = <
 &kp LS(LC(T))  &kp LC(W)  &kp LC(T)  &kp LC(LS(TAB))  &kp LC(TAB)    &mkp LCLK           &mkp RCLK            &kp LC(C)      &kp LC(V)        &kp LC(X)
 &kp LC(A)      &kp LC(S)  &trans     &kp LEFT_SHIFT   &kp LCTRL      &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp UP_ARROW   &lt 4 LS(LC(V))  &kp LG(V)
-&kp LC(Z)      &trans     &trans     &kp LC(MINUS)    &kp LC(EQUAL)  &kp LG(LS(S))       &kp LEFT             &kp DOWN       &kp RIGHT        &trans
+&kp LC(Z)      &trans     &trans     &kp LC(MINUS)    &kp LC(EQUAL)  &mkp MCLK           &kp LEFT             &kp DOWN       &kp RIGHT        &kp LG(LS(S))
 &kp LC(LS(Z))  &trans     &trans     &trans           &trans         &kp LG(V)           &kp ENTER            &kp BACKSPACE  &trans           &trans
             >;
         };
